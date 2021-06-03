@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./contact.scss";
 
 export default function Contact() {
@@ -14,7 +13,7 @@ export default function Contact() {
           <a href="https://www.facebook.com/leeburnell"> <i class="fas fa-thumbs-up"></i></a>
           <a href="https://www.twitter.com/itsbeeroybtw"> <i class="fas fa-retweet"></i></a>
           <a href="https://www.instagram.com/itsbeeroybtw"> <i class="fas fa-camera"></i></a>
-</div>
+        </div>
       </div>
     </div>
   );
