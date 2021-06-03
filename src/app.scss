@@ -1,0 +1,33 @@
+.app{
+    height: 100vh;
+
+    .sections{
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: lightsalmon;
+        position: relative;
+        top: 70px;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        scrollbar-width: none; //for firefox
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+        > *{
+            width: 100vw;
+            height: calc(100vh - 350px);
+            scroll-snap-align: start;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .app .sections > * {
+        height: calc(100vh - 70px);   
+    }
+
+    .app .sections .portfolio{
+        height: calc(100vh - 325px);   
+    }
+}
