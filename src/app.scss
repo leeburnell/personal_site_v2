@@ -1,3 +1,5 @@
+@import "./global.scss";
+
 .app{
     height: 100vh;
 
@@ -16,18 +18,12 @@
 
         > *{
             width: 100vw;
-            height: calc(100vh - 350px);
+            height: calc(100vh - 70px);
             scroll-snap-align: start;
+
+            @include mobile{
+                height: 100vh;
+            }
         }
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .app .sections > * {
-        height: calc(100vh - 70px);   
-    }
-
-    .app .sections .portfolio{
-        height: calc(100vh - 325px);   
     }
 }
